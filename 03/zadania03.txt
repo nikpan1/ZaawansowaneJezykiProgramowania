@@ -1,0 +1,78 @@
+Chcia³bym abyœcie Pañstwo przypomnieli sobie co to s¹ wskaŸniki i na czym polegaj¹ zwi¹zki miedzy
+tablicami a wskaŸnikami. Zadania pozwol¹ Pañstwu na nabranie "wyczucia"
+jak mo¿na pracowaæ ze wskaŸnikami. Niez³y materia³ wprowadzaj¹cy w zagadnienie
+znajdziecie Pañstwo pod poni¿szymi odsy³aczami (oczywiœcie s¹ te¿ inne). 
+                
+https://www.geeksforgeeks.org/arrays-in-c-cpp/?ref=lbp
+https://www.geeksforgeeks.org/strings-in-c-and-how-to-create-them/?ref=lbp
+https://www.geeksforgeeks.org/pointers-c-examples/?ref=lbp
+
+Zadanie 03.01.
+
+Podstawowe funkcje biblioteczne na tablicach znakowych -- ³añcuchach (ang. strings} znajduj¹ siê
+w standardowej bibliotece string.h 
+http://cplusplus.com/reference/cstring/
+
+Dok³adny opis dzia³ania tych funkcji znajdziecie Pañstwo na stronach wskazywanych przez odnoœniki.
+
+S¹ tam miêdzy innymi funkcje:
+
+strlen:  http://cplusplus.com/reference/cstring/strlen/
+
+size_t strlen ( const char * str );
+
+size_t (od size type) to liczba ca³kowita nieujemna tj.: unsigned int
+-----------------
+
+strcpy: http://cplusplus.com/reference/cstring/strcpy/
+
+char * strcpy ( char * destination, const char * source );
+-----------------
+
+strncpy: http://cplusplus.com/reference/cstring/strncpy/
+
+char * strncpy ( char * destination, const char * source, size_t num );
+-----------------
+
+strcat: http://cplusplus.com/reference/cstring/strcat/
+
+char * strcat ( char * destination, const char * source );
+-----------------
+
+strcmp: http://cplusplus.com/reference/cstring/strcmp/
+
+int strcmp ( const char * str1, const char * str2 );
+
+Wiele kompilatorów implemetuje te¿ funkcjê stricmp, która ró¿ni siê od
+strcmp tym, ¿e nie "rozró¿nia" wielkoœci liter tj. traktue A i a 
+jak t¹ sam¹ literê alfabetu.
+-----------------
+
+strchr: http://cplusplus.com/reference/cstring/strchr/
+
+const char * strchr ( const char * str, int character ); lub
+      char * strchr (       char * str, int character );
+-----------------
+
+strrchr: http://cplusplus.com/reference/cstring/strrchr/
+const char * strrchr ( const char * str, int character ); lub 
+      char * strrchr (       char * str, int character );
+-----------------
+
+Nieco mniej trywialne
+strstr: http://cplusplus.com/reference/cstring/strstr/
+const char * strstr ( const char * str1, const char * str2 );
+      char * strstr (       char * str1, const char * str2 );
+
+
+Proszê napisaæ w³asne odpowiedniki wszystkich wymienionych funkcji 
+bibliotecznych dla ³añcuchów tekstowych w dwóch wersjach
+,,wskaŸnikowej'' i ,,tablicowej''. 
+Pañstwa funkcje maj¹ zachowywaæ siê dok³adnie tak samo jak biblioteczne
+tj. przyjmowaæ takie same argumenty i zwracaæ takie same wartoœci
+jak funkcje biblioteczne.
+
+Proszê pamiêtaæ by nie u¿ywaæ nazw funkcji takich samych jak 
+biblioteczne. Zatem nie "strlen" a "moje_strlen_ptr", dla wersji
+wskaŸnikowej i "moje_strlen_tab", dla wersji tablicowej 
+lub coœ podobnego.

@@ -1,0 +1,49 @@
+Zadanie 02.01.
+Proszê napisaæ program, który bêdzie dzia³a³ tak jak systemowa komenda "copy"
+tj. komenda, która kopiuje pliki.
+Dok³adny opis dzia³ania mo¿na uzyskaæ otwieraj¹c okienko linii komend i wpisuj¹c instrukcjê: help copy
+
+Proszê pamiêtaæ by Pañstwa program nie nazywa³ siê "copy"
+poniewa¿ jest to zarezerwowana nazwa komendy sytemowej.
+Mo¿e siê nazywaæ np. "mycopy" lub coœ w tym duchu.
+Pañstwa wersja powinna kopiowaæ dowolny plik z po³o¿enia Ÿród³a do po³o¿enia przenaczenia
+
+Proszê napisaæ dwie wersje programu a) dla operacji wejœcia/wyjœcia
+C b) dla operacji wejœcia/wyjœcia C++.
+
+> mycopy c:\sciezka\nazwa_pliku.roz  c:\inna_sciezka\inna_nazwa.roz
+
+Zadanie 02.02
+Proszê napisaæ program, który bêdzie pobiera³ od u¿ytkownika liczbê ca³kowit¹ (int) i wypisze t¹ liczbê 
+na ekranie w postaci binarnej tj ci¹gu 0 i 1 .
+
+Proszê napisaæ dwie wersje programu a) dla operacji wejœcia/wyjœcia
+C b) dla operacji wejœcia/wyjœcia C++.
+
+Zadanie 02.03
+Proszê napisaæ program, który w pêtli bêdzie dodawa³ 
+wartoœæ 1.0 do zmiennej typu float zainicjowanej do 0.0
+miliard (10^9) razy. Wynik proszê wypisaæ na ekranie.
+
+Proszê napisaæ dwie wersje programu a) dla operacji wejœcia/wyjœcia
+C b) dla operacji wejœcia/wyjœcia C++.
+
+Zadanie 02.04. Proszê napisaæ program, który bêdzie oblicza³ œredni¹ i odchylenie standardowe
+dla liczb umieszczonych w tablicy zadeklarowanej statycznie. Proszê uwzglêdniæ mo¿liwoœæ wprowadzania 
+danych z klawiatury i wczytywania z pliku. Proszê uwzglêdniæ mo¿liwoœæ
+przekazywania parametrów (np. nazw plików z danymi) w linii komend i wczytywanie danych z pliku. 
+Proszê te¿ dodaæ procedurê zapisuj¹c¹ dane w pliku.
+
+Proszê napisaæ dwie wersje programu a) dla operacji wejœcia/wyjœcia
+C b) dla operacji wejœcia/wyjœcia C++.
+
+Zadanie 02.05. Proszê napisaæ program, modyfikacjê zadania 02.04, który bêdzie oblicza³ 
+œredni¹ i odchylenie standardowe dla liczb umieszczonych w tablicy zadeklarowanej jako 
+wskaŸnik i tworzonej dynamicznie w momencie gdy bêdzie znana iloœæ elementów tablicy. 
+Proszê uwzglêdniæ mo¿liwoœæ wprowadzania danych z klawiatury i wczytywania z pliku. 
+Proszê uwzglêdniæ mo¿liwoœæ przekazywania parametrów (np. nazw plików z danymi) w linii k
+omend i wczytywanie danych z pliku. Proszê te¿ dodaæ procedurê zapisuj¹c¹ dane w pliku.
+
+Proszê napisaæ dwie wersje programu a) dla operacji wejœcia/wyjœcia i dynamicznej alokacji 
+pamiêci C b) dla operacji wejœcia/wyjœcia i dynamicznej alokacji pamiêci C++.
+

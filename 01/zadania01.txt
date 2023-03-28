@@ -1,0 +1,18 @@
+Zadanie 01.01. Proszê napisaæ program który bêdzie oblicza³ 
+pierwiastki trójmianu.			ax^2 + bx + c = 0.
+Proszê uwzglêdniæ wszystkie mo¿liwoœci tj. równie¿ rozwi¹zania 
+zespolone. 
+
+Proszê napisaæ dwie wersje programu a) dla operacji
+wejœcia/wyjœcia
+C b) dla operacji wejœcia/wyjœcia C++.
+
+Zadanie 01.02 Proszê napisaæ program który wypisze na
+konsoli tabelê kodów ASCII
+Proszê napisaæ dwie wersje programu a) dla operacji
+wejœcia/wyjœcia
+C b) dla operacji wejœcia/wyjœcia C++.
+
+
+
+
