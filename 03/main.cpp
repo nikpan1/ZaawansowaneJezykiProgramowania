@@ -45,13 +45,17 @@ int main() {
 
 	printf("n_strchr 4th\nstr=%s\nn=%c\n", str1, *(n_strchr(str1, str1[3])));
 	printf("n_strrchr 6th\nstr=%s\nn=%c\n", str1, *(n_strrchr(str1, str1[5])));
-	strncpy(str1, str2, 3);
 
-	printf("n_strstr\nstr1=%s\nstr2=%s\n", str1, str2);
-	auto ptr = n_strstr(str1, (str2 + 3));
+
+	init(str1, 10);
+	char* str3 = (char*)malloc(4 * sizeof(char));
+	init(str3, 4);
+	n_strncpy(str1, str3, 3);
+	printf("n_strstr\nstr1=%s\nstr3=%s\n", str1, str3);
+	auto ptr = n_strstr(str1, str3);
 	
 	if (ptr != nullptr)
-		printf("strfound=%s\n", *ptr);
+		printf("strfound=%s\n", ptr);
 	else
 		printf("strfound=none\n");
 
@@ -139,19 +143,16 @@ char* n_strrchr(char* str, int character) {
 
 //  returns a pointer to the first occurrence of str2 in str1
 char* n_strstr(char* str1, const char* str2) {
-	int pivot;
 	for (int i = 0; i < n_strlen(str1); i++) {
-		if (*(str1 + i) == *str2) {
-			int k = n_strlen(str2) - 1;
-			for (; k > i; k --) {
-				printf("%c-%c ", *(str1 + i + k), *(str2 + k));
-				if (*(str1 + i + k) != *(str2 + k)) break;
+		if (*(str1 + i) == *(str2)) {
+			int result = n_strlen(str2) - 1;
+			while (result != 0) {
+				if (*(str1 + i + result) == *(str2 + result)) result--;
+				else break;
 			}
-			std::cout << k;
-			if (k == 1) return str1 + i;
+			if (result == 0) return str1 + i;
 		}
 	}
-
 	return nullptr;
 }
 
