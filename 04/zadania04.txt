@@ -1,0 +1,34 @@
+Chcia³bym kontynuowaæ temat powi¹zañ tablic i wskaŸników.
+Poni¿ej odsy³acz do tutoriala dostêpnego w Internecie.
+                
+https://www.geeksforgeeks.org/arrays-in-c-cpp/?ref=lbp
+https://www.geeksforgeeks.org/pointers-c-examples/?ref=lbp
+
+Za³¹czam te¿ fragment moich notatek do wyk³adu, w którym
+opisujê kwestie zwi¹zane z arytmetyk¹ na wskaŸnikach i
+tablicami dwuwymiarowymi.
+
+Proszê te¿ rzuciæ okiem na wyjaœnienia i przyk³ady
+zamieszczone w rozdziale 7 i 8 tutoriala, który
+przes³a³em Pañstwu wczeœniej.
+
+Zadanie 04.01
+Proszê napisaæ program, w którym zaimplementujecie Pañstwo
+mno¿enie macierzy (tablic dwuwymiarowych).
+Zak³adam, ¿e (w tej wersji) macierze bêd¹ zadeklarowane
+statycznie tj. np.
+
+double m[10][10];
+
+Program powinien sk³adaæ siê z funkcji w których:
+a) wcztytacie Pañstwo dane (elementy tablic) z klawiatury
+b) wcztytacie Pañstwo dane (elementy tablic) z pliku znajduj¹cego siê na dysku
+c) zawartoœæ tablic/y zostanie wypisana na ekranie 
+d) procedury mno¿enia macierzy
+e) zapiszecie Pañstwo tablicê z wynikiem mno¿enia na dysku.
+
+Proszê napisaæ ten program w dwóch wersjach u¿ywaj¹c notacji
+a) tablicowej
+b) wskaŸnikowej
+a tak¿e wersje programu a1) dla operacji wejœcia/wyjœcia
+C b1) dla operacji wejœcia/wyjœcia C++.
