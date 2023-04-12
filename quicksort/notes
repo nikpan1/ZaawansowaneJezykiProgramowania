@@ -1,0 +1,8 @@
+
+mamy tablice a[l..r]
+
+w tablicy a[l+1..r]
+od lewej strony -> szukamy a[] >= a[v]
+od prawej strony -> szukamy a[] <= a[v]
+
+
