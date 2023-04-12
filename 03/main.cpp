@@ -2,7 +2,7 @@
 #include <random>
 
 void init(char* str, int size);
-size_t n_strlen(const char* str);
+int n_strlen(const char* str);
 char* n_strcpy(char* destination, const char* source);
 char* n_strncpy(char* destination, const char* source, size_t num);
 char* n_strcat(char* destination, const char* source);
@@ -19,22 +19,22 @@ int main() {
 	init(str1, 10);
 	init(str2, 10);
 	
-	printf("str1 = %s, size = %d\n", str1, strlen(str1));
-	printf("str2 = %s, size = %d\n", str2, strlen(str2));
+	printf("str1 = %s, size = %d\n", str1, n_strlen(str1));
+	printf("str2 = %s, size = %d\n", str2, n_strlen(str2));
 	
 	n_strcpy(str2, str1);
-	printf("n_strcpy:\nstr1 = %s, size = %d\n", str1, strlen(str1));
-	printf("str2 = %s, size = %d\n", str2, strlen(str2));
+	printf("n_strcpy:\nstr1 = %s, size = %d\n", str1, n_strlen(str1));
+	printf("str2 = %s, size = %d\n", str2, n_strlen(str2));
 	
 
 	init(str2, 10);
-	printf("n_strncpy 6:\nstr2 = %s, size = %d\n", str2, strlen(str2));
+	printf("n_strncpy 6:\nstr2 = %s, size = %d\n", str2, n_strlen(str2));
 	n_strncpy(str2, str1, 6);
-	printf("str2 = %s, size = %d\n", str2, strlen(str2));
+	printf("str2 = %s, size = %d\n", str2, n_strlen(str2));
 	
 	n_strcat(str2, str1);
-	printf("n_strcat:\nstr1 = %s, size = %d\n", str1, strlen(str1));
-	printf("str2 = %s, size = %d\n", str2, strlen(str2));
+	printf("n_strcat:\nstr1 = %s, size = %d\n", str1, n_strlen(str1));
+	printf("str2 = %s, size = %d\n", str2, n_strlen(str2));
 	
 	printf("n_strcmp:\n str1 != str2 := %d\n", n_strcmp(str1, str2));
 	init(str1, 10);
@@ -76,7 +76,7 @@ void init(char* str, int size) {
 }
 
 // returns length of string
-size_t n_strlen(const char* str) {
+int n_strlen(const char* str) {
 	//char* pivot = const_cast<char*>(str);
 	int result = 0;
 	while (*(str + result) != '\0') result++;
@@ -105,7 +105,7 @@ char* n_strncpy(char* destination, const char* source, size_t num) {
 // concatenate strings
 char* n_strcat(char* destination, const char* source) {
 	size_t old_size = n_strlen(destination);
-	realloc(destination, n_strlen(source) * sizeof(char));
+	auto a = realloc(destination, n_strlen(source) * sizeof(char));
 	for (int i = 0; i < n_strlen(source); i++) 
 		*(destination + old_size + i) = *(source + i);
 

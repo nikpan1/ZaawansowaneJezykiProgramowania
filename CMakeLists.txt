@@ -6,7 +6,7 @@ cmake_minimum_required (VERSION 3.8)
 project ("ZaawansowaneJezykiProgramowania")
 
 # Dodaj źródło do pliku wykonywalnego tego projektu.
-add_executable (ZaawansowaneJezykiProgramowania "03/main.cpp")
+add_executable (ZaawansowaneJezykiProgramowania "04/main.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET ZaawansowaneJezykiProgramowania PROPERTY CXX_STANDARD 20)
