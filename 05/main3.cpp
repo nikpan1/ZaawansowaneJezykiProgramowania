@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <map>
+#include <unordered_map>
 
 using namespace std;
 
@@ -16,7 +16,7 @@ int main() {
         return 1;
     }
 
-    map<string, int> wordMap;
+    unordered_map<string, int> wordMap;
     string word;
     while (inputFile >> word) {
         wordMap[word]++;

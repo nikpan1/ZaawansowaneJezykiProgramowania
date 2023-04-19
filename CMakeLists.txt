@@ -5,8 +5,12 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("ZaawansowaneJezykiProgramowania")
 
+find_package( Curses REQUIRED )
+include_directories( ${CURSES_INCLUDE_DIRS} )
+target_link_libraries( "ZaawansowaneJezykiProgramowania" ${CURSES_LIBRARIES} )
+
 # Dodaj źródło do pliku wykonywalnego tego projektu.
-add_executable (ZaawansowaneJezykiProgramowania "05/main3.cpp")
+add_executable (ZaawansowaneJezykiProgramowania "05/main3.cpp" "7/main.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET ZaawansowaneJezykiProgramowania PROPERTY CXX_STANDARD 20)
