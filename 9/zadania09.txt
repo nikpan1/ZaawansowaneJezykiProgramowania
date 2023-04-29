@@ -1,0 +1,13 @@
+
+
+Zadanie 09.01. Wykorzystuj¹c doœwiadczenia zdobyte przy rozwi¹zywaniu zadañ 4 i 5,
+a tak¿e przyk³ad, który Pañstwu przes³a³em wczeœniej, proszê zdefiniowaæ klasê 
+szablon dla macierzy. Parametrem szablonu powinien byæ typ danych dla których 
+tworzona bêdzie macierz (np. double, float, int). Proszê zdefiniowaæ konstruktory 
+i destruktory. Klasa powinna dynamicznie alokowaæ pamiêæ, powinna wczytywaæ 
+i zapisywaæ dane na dysku, wyœwietlaæ siê na ekranie. Nale¿y te¿ zdefiniowaæ 
+operatory (overload) mno¿enia, dodawania, odejmowania oraz podstawiana (=) 
+(bez dzielenia z oczywistych wzglêdów) dla obiektów typu macierz.
+Zdefiniowan¹ klasê proszê sprawdziæ tj. napisaæ program, 
+który j¹ wykorzystuje (np. mno¿enie macierzy) dla ró¿nych
+parametrów szablonu.
